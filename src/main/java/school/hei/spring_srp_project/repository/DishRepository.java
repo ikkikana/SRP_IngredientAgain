@@ -1,8 +1,5 @@
 package school.hei.spring_srp_project.repository;
 
-
-
-
 import org.springframework.stereotype.Repository;
 import school.hei.spring_srp_project.entity.Dish;
 import school.hei.spring_srp_project.entity.Ingredient;
@@ -75,7 +72,6 @@ public class DishRepository {
                 del.setInt(1, dishId);
                 del.executeUpdate();
             }
-
             String insertSQL = "INSERT INTO dish_ingredient(dish_id, ingredient_id, quantity, unit) VALUES(?, ?, 1, 'PCS')";
             try (PreparedStatement ins = conn.prepareStatement(insertSQL)) {
                 for (Integer ingId : ingredientIds) {

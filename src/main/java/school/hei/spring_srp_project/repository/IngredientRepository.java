@@ -1,8 +1,5 @@
 package school.hei.spring_srp_project.repository;
 
-
-
-
 import org.springframework.stereotype.Repository;
 import school.hei.spring_srp_project.entity.Ingredient;
 

@@ -1,12 +1,10 @@
 package school.hei.spring_srp_project.repository;
 
-
 import org.springframework.stereotype.Repository;
 import school.hei.spring_srp_project.entity.Product;
 
 import javax.sql.DataSource;
 import java.sql.*;
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
